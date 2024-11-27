@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     saveCSV(csvData, fileName);
 
     // Reset State for Next Sentence
+    keystrokes = [];
     currentSentenceIndex++;
     if (currentSentenceIndex < sentenceKeys.length) {
       typedSentence.style.display = "none";
